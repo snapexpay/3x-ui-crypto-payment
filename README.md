@@ -18,6 +18,7 @@ A small self-hosted service that lets your [3x-ui](https://github.com/MHSanaei/3
 - **Safe webhooks.** HMAC-SHA256 signatures are checked in constant time with a 5-minute timestamp window. The invoice status is always re-read from the SnapEX API, and each invoice is provisioned only once, even if the webhook arrives twice or two copies arrive at the same time.
 - **Simple plans.** Days, USD price and traffic quota, all in one env variable.
 - **One container.** FastAPI + SQLite. Run it with `docker compose up -d`.
+- **On request: rubles by QR and Alipay.** Besides crypto, two more payment methods can be turned on for your SnapEX Pay account on request: Russian rubles by QR code (Russia) and Alipay. Ask us in the chat on [pay.snapex.pro](https://pay.snapex.pro).
 
 ## How it works
 
